@@ -2,7 +2,7 @@
 // Images Gallery v1.1
 /* Start Get All The Gallery Images */
 let requestGalleryImages = new XMLHttpRequest();
-requestGalleryImages.open("GET", "../json/galleryImages.json");
+requestGalleryImages.open("GET", "json/galleryImages.json");
 requestGalleryImages.send();
 requestGalleryImages.addEventListener("readystatechange", (ev) => {
     if (requestGalleryImages.readyState === 4 && requestGalleryImages.status === 200) {
